@@ -1,0 +1,179 @@
+/* Custom CSS for Navbar */
+
+
+.navbar-brand img {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Add some spacing between logo and brand text */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* Adjust the padding for navbar links */
+    margin-right: 10px; /* Add some spacing between navbar links */
+    border-radius: 5px; /* Add rounded corners to navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #343a40; /* Change background color on hover */
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+/* Dropdown styling */
+.dropdown-menu {
+    background-color: #343a40;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.user-name {
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+
+
+/* styles.css */
+/* Language Selector */
+.select-wrapper {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.select-css {
+    width: 120px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    /* background-color: #2c3e50; */
+    background-color: transparent;
+    /* color: #ecf0f1; */
+    cursor: pointer;
+}
+
+.select-css:hover {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttonback {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background:transparent;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+   }
+   
+   .buttonback > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .buttonback:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .buttonback:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+
+
+   
+
+
+   .Btnout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(5, 65, 65);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-weight: 500;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btnout:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btnout:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btnout:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btnout:active {
+    transform: translate(2px ,2px);
+  }
