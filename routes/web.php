@@ -99,7 +99,7 @@ Route::middleware('auth')->group(function() {
     Route::get('/repairs/{repair}/email', [RepairController::class, 'email'])->name('repairs.email')->middleware('role:admin');
     Route::post('/repairs/update/{id}', [RepairController::class, 'update'])->name('repairs.update');
     Route::post('/repairs/updateAdmin/{id}', [RepairController::class, 'updateAdmin'])->name('repairs.updateAdmin')->middleware('role:admin');
-    Route::post('/repairs/updateMechanical/{id}', [RepairController::class, 'updateMechanical']);
+    Route::post('/repairs/updateMechanical/{id}', [RepairController::class, 'updateMechanical'])->name('repairs.updateMechanical');
 
     // Spare Parts
     Route::get('/spareparts', [SparePartController::class, 'index'])->name('spareParts.index')->middleware(['auth', 'role:admin,mechanical']);
